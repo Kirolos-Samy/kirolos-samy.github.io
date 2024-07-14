@@ -346,6 +346,10 @@ a.meanmenu-reveal i {
   color: grey; /* Example hover color */
 }
 
+.active {
+  color: grey; /* Example hover color */
+}
+
 /* Hamburger button styles */
 .k-navbar-toggle {
   display: none;
