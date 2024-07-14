@@ -318,6 +318,9 @@
 --------------------------------------*/
 .mp-footer-section {
   background-color: #343434;
+  padding: 15px 0;
+  /* bottom: 0;
+  position: fixed; */
 }
 
 /*-- Footer Top --*/
@@ -331,7 +334,7 @@
 .mp-footer-social a {
   color: #dcdcdc;
   display: inline-block;
-  margin: 0 12px;
+  margin: 10px 12px 0px 12px;
   padding: 0 3px;
 }
 .mp-footer-social a:hover {
@@ -349,7 +352,7 @@
 /*-- Footer Bottom --*/
 .mp-fotter-bottom {
   border-bottom: 1px solid #3f3f3f;
-  padding: 60px 0;
+  padding: 30px 0;
 }
 
 .mp-footer-copyright {}
@@ -393,6 +396,82 @@
   color: #999999;
   text-transform: uppercase;
 }
+
+/*-------------------------- */
+/* Footer Section */
+.kf-footer-section {
+  background-color: #343434;
+}
+
+/* Footer Bottom */
+.kf-footer-bottom {
+  padding: 10px 0;
+}
+
+.kf-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.kf-footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.kf-footer-left, .kf-footer-right {
+  color: #dddddd;
+}
+
+.kf-footer-left p, .kf-footer-right p {
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  line-height: 30px;
+  margin: 0;
+}
+
+.kf-footer-right p {
+  text-align: right;
+}
+
+.kf-footer-right p span {
+  color: #999999;
+  text-decoration: none; /* Remove underline */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .kf-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .kf-footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .kf-footer-right p {
+    text-align: left;
+  }
+  .kf-footer-right p span {
+    display: block; /* Ensure span elements are on separate lines */
+    margin-top: 10px; /* Add spacing between lines */
+  }
+}
+
+/* Additional styles for separate lines */
+.kf-footer-right p:nth-child(1)::after {
+  content: '';
+  display: block;
+  margin-top: 10px;
+}
+
+
 
 
 /* -----------------------------------

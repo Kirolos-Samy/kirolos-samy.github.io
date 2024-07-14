@@ -20,7 +20,7 @@
 
 <body>
 
-<div class="header-section section">
+<!-- <div class="header-section section">
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
@@ -45,6 +45,29 @@
             </ul>
 
         </nav>
+    </div>
+</div> -->
+
+<div class="k-navbar">
+    <div class="k-container">
+        <div class="k-navbar-content">
+            <div class="k-navbar-left">
+                <a href="index.html" class="k-navbar-logo">
+                    <img class="k-img-logo" src="/assets/Q7F98PIND9fZGgXKQtPD1HDpBsLQ65IXQfOw.png.png" alt="Logo">
+                </a>
+                <span class="k-navbar-title">MagneGuard Solutions</span>
+            </div>
+            <div class="k-navbar-right">
+                <button class="k-navbar-toggle" aria-label="Toggle navigation">
+                    &#9776; <!-- Hamburger icon -->
+                </button>
+                <ul class="k-navbar-menu">
+                    <li class="k-navbar-item"><a href="index.html" class="k-navbar-link">Home</a></li>
+                    <li class="k-navbar-item"><a href="about.html" class="k-navbar-link">About</a></li>
+                    <li class="k-navbar-item"><a href="services.html" class="k-navbar-link">Services</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -110,9 +133,9 @@
             
             
             <div class="mp-single-team col-sm-4 col-xs-12 mb-30" style="align-items:center;">
-                <img src="/assets/IMG_3059-fotor-bg-remover-2024070563659.png" >
+                <img src="/assets/ramezp.jpg" >
                 <h4>Ramez Ibrahim</h4>
-                <span>CEO and Developer</span>
+                <span>Co-Founder & CEO</span>
                 <div class="social">
                     <a href="#"><i class="fa fa-facebook"></i></a>
                     <a href="#"><i class="fa fa-instagram"></i></a>
@@ -121,9 +144,9 @@
                 </div>
             </div>
             <div class="mp-single-team col-sm-4 col-xs-12 mb-30" style="align-items:center;">
-                <img src="/assets/IMG_3059-fotor-bg-remover-2024070563659.png" >
-                <h4>Ramez Ibrahim</h4>
-                <span>CEO and Developer</span>
+                <img src="/assets/Kiro-01.png" >
+                <h4>Kirolos Samy</h4>
+                <span>Co-Founder & CTO</span>
                 <div class="social">
                     <a href="#"><i class="fa fa-facebook"></i></a>
                     <a href="#"><i class="fa fa-instagram"></i></a>
@@ -139,7 +162,7 @@
 
 <div class="mp-footer-section section">
     
-    <div class="mp-fotter-top">
+    <!-- <div class="mp-fotter-top">
         <div class="container">
             <div class="row">
                 <img class="foot-logo" src="/assets/Q7F98PIND9fZGgXKQtPD1HDpBsLQ65IXQfOw.png.png">
@@ -149,19 +172,16 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     
-    <div class="mp-fotter-bottom">
-        <div class="container">
-            <div class="row">
-
-                <div class="mp-footer-copyright col-md-6 col-xs-12">
-                    <p>Copyright &copy; 2024 . All Rights Reserved.</p>
+    <div class="kf-footer-section">
+        <div class="kf-container">
+            <div class="kf-footer-content">
+                <div class="kf-footer-left">
+                    <p>Copyright &copy; 2024. All Rights Reserved.</p>
                 </div>
-                
-                <div class="mp-footer-contact col-md-6 col-xs-12">
-                    <p><span>Call :</span> +02 01000641198</p>
-                    <p><span>Email :</span> ramezibrahim1106@gmail.com</p>
+                <div class="kf-footer-right">
+                    <p><span>Call:</span> +02 01000641198 <span>Email:</span> ramezibrahim1106@gmail.com</p>
                 </div>
             </div>
         </div>
@@ -170,7 +190,16 @@
 </div>
 
 
-
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const toggleButton = document.querySelector('.k-navbar-toggle');
+      const menu = document.querySelector('.k-navbar-menu');
+  
+      toggleButton.addEventListener('click', function () {
+        menu.classList.toggle('show');
+      });
+    });
+  </script>
 
 <script src="js/vendor/jquery-3.1.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>

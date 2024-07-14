@@ -21,20 +21,59 @@
 
 <body>
 
-<div class="header-section section">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12" style="margin-bottom: 5%;">
-                <div class="float-left">
-                    <a href="index.html" class="header-logo"><img class="img-logo" src="/assets/Q7F98PIND9fZGgXKQtPD1HDpBsLQ65IXQfOw.png.png" ></a>
+<!-- 
+    <div class="header-section header-fullwidth">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-left">
+                    <a href="index.html" class="header-logo">
+                        <img class="img-logo" src="/assets/Q7F98PIND9fZGgXKQtPD1HDpBsLQ65IXQfOw.png.png" alt="Logo">
+                    </a>
+                    <span class="header-title">MagneGuard Solutions</span>
                 </div>
-                <div class="float-right">
-                    <button class="menu-toggle mp-mToggle text-dark"><i class="ion-android-menu"></i></button>
+                <div class="header-right">
+                    <div class="container">
+                        <nav class="mp-menu">
+                            <ul>
+                                <li class="active"><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="services.html">Services</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <button class="menu-toggle mp-mToggle"><i class="ion-android-menu"></i></button>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="k-navbar">
+        <div class="k-container">
+            <div class="k-navbar-content">
+                <div class="k-navbar-left">
+                    <a href="index.html" class="k-navbar-logo">
+                        <img class="k-img-logo" src="/assets/Q7F98PIND9fZGgXKQtPD1HDpBsLQ65IXQfOw.png.png" alt="Logo">
+                    </a>
+                    <span class="k-navbar-title">MagneGuard Solutions</span>
+                </div>
+                <div class="k-navbar-right">
+                    <button class="k-navbar-toggle" aria-label="Toggle navigation">
+                        &#9776; <!-- Hamburger icon -->
+                    </button>
+                    <ul class="k-navbar-menu">
+                        <li class="k-navbar-item"><a href="index.html" class="k-navbar-link">Home</a></li>
+                        <li class="k-navbar-item"><a href="about.html" class="k-navbar-link">About</a></li>
+                        <li class="k-navbar-item"><a href="services.html" class="k-navbar-link">Services</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
-</div>
+    
+    
+    
+
+
 
 <div class="mp-menu-section menu-section">
     <div class="container">
@@ -91,7 +130,7 @@
 
 <div class="mp-footer-section section">
     
-    <div class="mp-fotter-top">
+    <!-- <div class="mp-fotter-top">
         <div class="container">
             <div class="row">
                 <img class="foot-logo" src="/assets/Q7F98PIND9fZGgXKQtPD1HDpBsLQ65IXQfOw.png.png">
@@ -101,29 +140,53 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     
-    <div class="mp-fotter-bottom">
+    <!-- <div class="mp-fotter-bottom">
         <div class="container">
             <div class="row">
 
-                <div class="mp-footer-copyright col-md-6 col-xs-12">
-                    <p>Copyright &copy; 2024 . All Rights Reserved.</p>
+                <div class="mp-footer-copyright col-md-4 col-xs-12">
+                    <p>Copyright &copy; 2024 . All Rights Reserved .</p>
                 </div>
                 
-                <div class="mp-footer-contact col-md-6 col-xs-12">
+                <div class="mp-footer-contact col-md-8 col-xs-12">
                     <p><span>Call :</span> +02 01000641198</p>
                     <p><span>Email :</span> ramezibrahim1106@gmail.com</p>
                 </div>
             </div>
         </div>
+    </div> -->
+
+    <div class="kf-footer-section">
+        <div class="kf-container">
+            <div class="kf-footer-content">
+                <div class="kf-footer-left">
+                    <p>Copyright &copy; 2024. All Rights Reserved.</p>
+                </div>
+                <div class="kf-footer-right">
+                    <p><span>Call:</span> +02 01000641198 <span>Email:</span> ramezibrahim1106@gmail.com</p>
+                </div>
+            </div>
+        </div>
     </div>
+    
+    
     
 </div>
 
 
 
-
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const toggleButton = document.querySelector('.k-navbar-toggle');
+      const menu = document.querySelector('.k-navbar-menu');
+  
+      toggleButton.addEventListener('click', function () {
+        menu.classList.toggle('show');
+      });
+    });
+  </script>
 
 
 <script src="js/vendor/jquery-3.1.1.min.js"></script>

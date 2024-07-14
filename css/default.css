@@ -21,6 +21,9 @@ img{
     width: 15%;
     margin: 0 42% 2% 42.5%;
 }
+.foot2-logo{
+    width: 10%;
+}
 *::before,
 *::after,
 a,
@@ -825,4 +828,9 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 #scrollUp:hover {
   background-color: #3f3f3f;
   color: #fff;
+}
+
+.mp-services-section {
+    align-items: center;
+    text-align: center;
 }
